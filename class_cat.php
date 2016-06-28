@@ -28,4 +28,26 @@ class Cat
     protected function innerFunction()
 }
 
+
+
+        $pet = new Cat("Kitty");
+        //$pet = new Cat();
+        
+        echo $pet->name;
+        echo "<br>";
+        
+        $pet->name = "Hello Kitty";
+        echo $pet->name;
+        echo "<br>";
+        
+        $movePosition = $pet->moveTo(3,5);
+        echo "(".$movePosition['x'].", ".$movePosition['y'].")";
+        echo "<br>";
+        
+        $movePosition = $pet->resetPosition();
+        echo "(".$movePosition['x'].", ".$movePosition['y'].")";
+        echo "<br>";
+
+
+
  
